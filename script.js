@@ -3,11 +3,11 @@
 
 //fetch api to fide the data------
 const apiKey = "f424b9c9d2c753461cd7043f41e3a8be";
-const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q="
+const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=lucknow"
 
-async function checkWeather(city){  
-    const result = await fetch(apiUrl + city + `&appid=${apiKey}`);
-    var data = await result.json();
+async function checkWeather(){  
+    const response = await fetch(apiUrl +  `&appid=${apiKey}`);
+    var data = await response.json();
 
     console.log(data)
 
