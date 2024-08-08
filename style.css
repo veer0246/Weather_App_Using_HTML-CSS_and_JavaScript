@@ -45,6 +45,9 @@ body{
     height: 55px;
     cursor: pointer;
 }
+.search button:hover{
+    background-color: rgb(220, 184, 161);
+}
 .search button img{
     width: 25px;
 }
